@@ -18,6 +18,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/v1.0/transactions")
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
 public class TransactionRestController {
 
     private ITransactionService iTransactionService;
